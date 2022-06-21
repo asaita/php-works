@@ -10,7 +10,7 @@ function recursiveUcgen($boyut){
         $yatay++;
         recursiveUcgen($boyut);
     }          
-
+//
 };
 
 recursiveUcgen(15);

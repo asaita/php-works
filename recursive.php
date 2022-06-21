@@ -33,7 +33,7 @@ $bilgisayar=[
         'name'=>'Network Sistemleri'
     ],
 ];
-
+ 
     //echo '<pre>';
     //print_r($bilgisayar);
     //echo '<pre>';
