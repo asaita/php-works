@@ -31,4 +31,17 @@ function ucgen($boyut){
 };
 
 ucgen(15);
+
+
+function f($sayi)
+{
+    $sayi2 = 2;
+    $total = 1;
+    for ($i = 1; $i <= $sayi; $sayi--) {
+        $total *= $sayi;
+    }
+    return $total;
+}
+
+echo f(3) * f(2);
 ?>
