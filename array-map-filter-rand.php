@@ -5,17 +5,18 @@ $planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", 
 $planets2=array_filter($planets);
 
 function uret($dizi, $sayi){
+    
     $Rand_Key=array_rand($dizi, $sayi);
-    for ($i=0; $i <$sayi ; $i++) { 
-        echo $dizi[$Rand_Key[$i]] . "<br>";
-    }
-   echo "<br>";
+
+    return array_map( function ($i) use ($dizi){ return $dizi[$i]; }, $Rand_Key);
+
 }
-uret($planets2,2);
-uret($planets2,3);
-uret($planets2,4);
-uret($planets2,2);
-uret($planets2,5);
+echo '<pre>';
+print_r(uret($planets2,2));
+print_r(uret($planets2,3));
+print_r(uret($planets2,4));
+print_r(uret($planets2,2));
+print_r(uret($planets2,5));
 
 
 
